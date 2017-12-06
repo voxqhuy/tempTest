@@ -16,3 +16,17 @@ h2 {
 div {
 	padding: 24px 0 24px 0;
 }
+
+.datesBox {
+	background-color: #666;
+
+}
+
+.dates {
+	text-align: left;
+	margin: 0px 60px;
+	padding-bottom: 240px;
+	width: 100%;
+	display: grid;
+	grid-template: 240px / 50% 50%;
+}
