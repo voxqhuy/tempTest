@@ -2,9 +2,54 @@
 <html>
 <head>
 	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 </head>
 <body>
-<div class="center"><h1>Hello Tu</h1>
+<div>
+    <div class="row no-gutter">
+        <div id="test-nav" class="col-3 col-sm-2 col-md-2 col-lg-1 col-xl-1">
+            <nav class="nav navbar-light navbar-toggleable-sm">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarWEX" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse flex-column mt-md-0 mt-4 pt-md-0 pt-4" id="navbarWEX">
+                    <a class="nav-link navbar-brand active" href="~/Views/Forms/ControlPanel.cshtml"><span class="fa fa-home"></span></a>
+                    <a href="" class="nav-link">Reading</a>
+                    <a href="" class="nav-link">Pronunciation</a>
+                    <a href="" class="nav-link">Listening</a>
+                </div>
+            </nav>
+        </div>
+        <div class=" col-9 col-sm-10 col-md-10 col-lg-11 col-xl-11">
+            <div id="main-view" class="container-fluid">
+            	<div id="introduction" class="bg-danger">
+            		<h1>Hello Tu</h1>
+					<h2>Ready for the listening test? Yee, excited? here we go.</h2>
+					<h4>In this test, you are to write down all the words you can catch, based on the topic.</h4>
+					<p>(For example: topic "Number": Write down all the numbers you can hear)</p>
+					<h4>You can use a paper, write down all the words, take pictures of the papers when you are finished, and upload it to gg drive files.</h4>
+					<p id="warning">(Please listen to each only ONE TIME)</p>
+					<p>If you find an audio that you can not play, ignore it, and tell me afterwards.</p>
+					<h2>Good luck!</h2>
+            	</div>
+            	<div id="reading" class="bg-success">
+            		<a href="/images/myw3schoolsimage.jpg" download>aaa</a>
+            		<a href="/images/myw3schoolsimage.jpg" download>aaa</a>
+            	</div>
+            	<div id="pronunciation">
+            		
+            	</div>
+            	<div id="listening">
+            		
+            	</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="center"><h1>Hello Tu</h1>
 <h2>Ready for the listening test? Yee, excited? here we go.</h2>
 </div>
 <h4>In this test, you are to write down all the words you can catch, based on the topic.</h4>
@@ -80,6 +125,6 @@
 		<source src="furniture.mp3" type="audio/mpeg">
 			Your browser does not support the audio element.
 	</audio>
-	</div>
+	</div> -->
 </body>
 </html>

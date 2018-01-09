@@ -1,8 +1,31 @@
 body {
 	background-color: #999;
-	margin: 0 24px 0 24px;
+	color: white;
 }
-.center {
+
+#test-nav {
+	background-color: #222;
+}
+
+#introduction {
+
+}
+
+#reading {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.row.no-gutter {
+  margin-left: 0;
+  margin-right: 0;
+}
+.row.no-gutter [class*='col-']:not(:first-child),
+.row.no-gutter [class*='col-']:not(:last-child) {
+  padding-right: 0;
+  padding-left: 0;
+}
+/*.center {
 	text-align: center;
 }
 
@@ -29,4 +52,4 @@ div {
 	width: 100%;
 	display: grid;
 	grid-template: 240px / 50% 50%;
-}
+}*/
