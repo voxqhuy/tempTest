@@ -84,7 +84,7 @@ i, span {
 }
 
 #sidebar.active ul li a {
-    padding: 20px 10px;
+    padding: 35px 10px;
     text-align: center;
     font-size: 0.85em;
 }
@@ -187,6 +187,8 @@ a.download {
     CONTENT STYLE
 ----------------------------------------------------- */
 #content {
+	width: 100%;
+	height: 100%;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
@@ -248,4 +250,20 @@ a.download {
     #sidebarCollapse span {
         display: none;
     }
+}
+
+.main-content {
+	width: 100%;
+	display: grid;
+}
+
+#reading-content {
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 12px;
+}
+
+.reading-box {
+	height: 60vh;
+	background-color: #fff;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
