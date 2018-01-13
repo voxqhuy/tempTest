@@ -266,19 +266,34 @@ a.download {
 
 #reading-content {
 	height: 100%;
-	grid-template-rows: 60px 1fr 72px;
+	grid-template-rows: 60px 180px 10px 60px 180px 72px;
 	grid-row-gap: 24px;
 }
 
-.section-title {
+#reading-title, #grammar-title {
 	width: 100%;
 	text-align: center;
 }
 
-.reading-downloads{
+#reading-title {
+	grid-row: 1;
+}
+
+#reading-downloads{
+	grid-row: 2;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-column-gap: 12px;
+	background-color: #fff;
+}
+
+#grammar-title {
+	grid-row: 4;
+}
+
+#grammar-downloads{
+	grid-row: 5;
+	display: grid;
 	background-color: #fff;
 }
 
@@ -393,4 +408,46 @@ a.download {
 #speaking-next-button {
 	grid-row: 7;
 	grid-column: 1 / span 2;
+}
+
+/* ---------------------------------------------------
+    LISTENING
+----------------------------------------------------- */
+
+#listening-content {
+	height: 100%;
+	grid-template-rows: 60 repeat(5, 1fr) 72px;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 24px;
+}
+
+#listening-title {
+	grid-row: 1;
+	grid-column: 1 / span 2;
+}
+
+.listening-question {
+	height: 100%;
+	width: 100%;
+	background: #4284a3;
+	color: #fff;
+	border-radius: 5px;
+	padding: 0 24px;
+}
+
+.listening-question p {
+	color: #fff;
+}
+
+#listening-next-button {
+	grid-row: 7;
+	grid-column: 1 / span 2;
+}
+
+/* ---------------------------------------------------
+    INSTRUCTION
+----------------------------------------------------- */
+
+#instruction-screen ul li{
+	font-size: 20px;
 }
