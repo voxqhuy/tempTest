@@ -25,7 +25,7 @@
                 </div>
 
                 <ul class="list-unstyled components">
-                    <li class="active">
+                    <li>
 <!--                         <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                             <i class="glyphicon glyphicon-home"></i>
                             Home
@@ -35,16 +35,18 @@
                             <li><a href="#">Home 2</a></li>
                             <li><a href="#">Home 3</a></li>
                         </ul> -->
-                        <a href="#">
+                        <a href="index.html">
                             <i class="glyphicon glyphicon-home"></i>
                             Home
                         </a>
                     </li>
-                    <li>
-                        <a href="reading.html">
+                    <li class="active">
+                        <a href="#">
                             <i class="glyphicon glyphicon-eye-open"></i>
                             Reading
                         </a>
+                    </li>
+                    <li>
                         <a href="speaking.html">
                             <i class="glyphicon glyphicon-bullhorn"></i>
                             Speaking
@@ -79,7 +81,7 @@
                         </div>
 
                         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-custom navbar-right">
+                            <ul class="nav navbar-nav navbar-right">
                                 <li><a href="help.html">
                             <i class="glyphicon glyphicon-comment"></i>
                             Need help?
@@ -89,11 +91,25 @@
                     </div>
                 </nav>
 
-                <div class="main-content" id="welcome-screen">
-                	<div><h2>Write down answers on PAPERS or PDF</h2></div>
-                	<div id="get-started-container">
-                		<button id="get-started" onclick="startTest()">Get Started!</button>
+                <div class="main-content" id="reading-content">
+                	<div class="section-title">
+                		<h2>Reading</h2>
                 	</div>
+                	<div class="reading-downloads">
+	                	<div class="reading-box">
+	                		<a href="/images/myw3schoolsimage.jpg" download>
+							  <div class="reading-file">Download Part I</div>
+							</a>
+	                	</div>
+	                	<div class="reading-box">
+	                		<a href="/images/myw3schoolsimage.jpg" download>
+							  <div class="reading-file">Download Part II</div>
+							</a>
+	                	</div>
+                	</div>
+                	<button class="back-next-button" onclick="toSpeaking()">
+                		Next Section: Speaking >>
+                	</button>
                 </div>
 <!-- 
                 <div class="line"></div> -->
